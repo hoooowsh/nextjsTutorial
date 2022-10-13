@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import MeetupList from "../../components/meetups/MeetupList";
+import MeetupList from "../../components/add_new_components/MeetupList";
 import Layout from "../../components/layout/Layout";
 
 import Link from "next/link";

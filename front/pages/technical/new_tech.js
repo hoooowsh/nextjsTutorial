@@ -1,14 +1,14 @@
 // domain.com/technical/new_tech
 
 import React from "react";
-import NewMeetupForm from "../../components/meetups/NewMeetupForm";
+import NewTechForm from "../../components/add_new_components/NewTechForm";
 
 function new_tech() {
-  function addMeetupHandler(enteredMeetupData) {
-    console.log(enteredMeetupData);
+  function addTechHandler(enteredTechData) {
+    console.log(enteredTechData);
   }
 
-  return <NewMeetupForm onAddMeetup={addMeetupHandler} />;
+  return <NewTechForm onAddTech={addTechHandler} />;
 }
 
 export default new_tech;
