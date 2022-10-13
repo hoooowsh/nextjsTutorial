@@ -1,13 +1,13 @@
 import Card from "../ui/Card";
-import classes from "./MeetupItem.module.css";
-import Router, { useRouter } from "next/router";
+import classes from "./TechItem.module.css";
+import { useRouter } from "next/router";
 
-function MeetupItem(props) {
-  const rounter = useRouter();
+function TechItem(props) {
+  const router = useRouter();
   function showDetailsHandler() {
-    rounter.push("/" + props.id);
+    router.push("/technical/" + props.id);
   }
-
+  
   return (
     <li className={classes.item}>
       <Card>
@@ -16,7 +16,6 @@ function MeetupItem(props) {
         </div> */}
         <div className={classes.content}>
           <h3>{props.title}</h3>
-          <address>{props.address}</address>
         </div>
         <div className={classes.actions}>
           <button onClick={showDetailsHandler}>Show Details</button>
@@ -26,4 +25,4 @@ function MeetupItem(props) {
   );
 }
 
-export default MeetupItem;
+export default TechItem;
