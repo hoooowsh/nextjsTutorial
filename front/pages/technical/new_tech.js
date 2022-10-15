@@ -4,8 +4,19 @@ import React from "react";
 import NewTechForm from "../../components/add_new_components/NewTechForm";
 
 function new_tech() {
-  function addTechHandler(enteredTechData) {
+  async function addTechHandler(enteredTechData) {
     console.log(enteredTechData);
+    const response = await fetch("http://localhost:8000/technical", {
+      method: "POST",
+      body: JSON.stringify(enteredTechData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    const data = await response.json();
+    console.log(data);
+    // console.log(enteredTechData);
   }
 
   return <NewTechForm onAddTech={addTechHandler} />;
