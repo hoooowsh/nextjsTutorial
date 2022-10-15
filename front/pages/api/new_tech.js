@@ -5,6 +5,8 @@ function handler(req, res) {
     const data = req.body;
 
     const { title, text } = data;
+
+    
   }
 }
 

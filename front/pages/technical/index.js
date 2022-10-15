@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react";
-import TechList from "../../components/add_new_components/TechList";
+import TechList from "../../components/add_new_components/Tech/TechList";
 import Layout from "../../components/layout/Layout";
 
 import Link from "next/link";

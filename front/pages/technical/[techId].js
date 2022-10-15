@@ -1,4 +1,4 @@
-import TechDetail from "../../components/add_new_components/TechDetail";
+import TechDetail from "../../components/add_new_components/Tech/TechDetail";
 
 function TechDetails() {
   // console.log("wtf");
