@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-import Card from "../ui/Card";
+import Card from "../../ui/Card";
 import classes from "./NewLeetcodeForm.module.css";
 
 function NewLeetcodeForm(props) {
