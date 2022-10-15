@@ -1,11 +1,11 @@
 // domain.com/technical/new_tech
 
 import React from "react";
-import NewTechForm from "../../components/add_new_components/NewTechForm";
+import NewTechForm from "../../components/add_new_components/Tech/NewTechForm";
 
 function new_tech() {
   async function addTechHandler(enteredTechData) {
-    console.log(enteredTechData);
+    // console.log(enteredTechData);
     const response = await fetch("http://localhost:8000/technical", {
       method: "POST",
       body: JSON.stringify(enteredTechData),
@@ -15,8 +15,7 @@ function new_tech() {
     });
 
     const data = await response.json();
-    console.log(data);
-    // console.log(enteredTechData);
+    // console.log(data);
   }
 
   return <NewTechForm onAddTech={addTechHandler} />;
